@@ -1,0 +1,54 @@
+{
+  "comments": [
+    {
+      "id": 1,
+      "stars": 5,
+      "text": "Very good photographer"
+    },
+    {
+      "id": 2,
+      "stars": 3,
+      "text": "Not interested"
+    },
+    {
+      "id": 3,
+      "stars": 5,
+      "text": "Awesome photographer, awesome works"
+    },
+    {
+      "id": 4,
+      "stars": 4,
+      "text": "Good photographer, but so expensive"
+    },
+    {
+      "id": 5,
+      "stars": 1,
+      "text": "The photographer isn't responsible"
+    },
+    {
+      "id": 6,
+      "stars": 4,
+      "text": "Good photographer, but so expensive"
+    },
+    {
+      "id": 7,
+      "stars": 2,
+      "text": "I don't like his works"
+    },
+    {
+      "id": 8,
+      "stars": 5,
+      "text": "Awesome photographer, he's realy talanteds"
+    },
+    {
+      "id": 9,
+      "stars": 4,
+      "text": "Just good photographer"
+    },
+    {
+      "id": 10,
+      "stars": 2,
+      "text": "It's realy expensive"
+    }
+  ]
+}

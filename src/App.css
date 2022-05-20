@@ -1,38 +1,166 @@
 .App {
   text-align: center;
+  padding-top: 5em;
+  font-weight: 200;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#App-header {
+  z-index: 3;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  padding-left: 5%;
+  font-weight: 200;
+  font-family:'Times New Roman', Times, serif;
 }
 
-.App-header {
-  background-color: #282c34;
+.App-icon {
+  width: 2em;
+  padding: 1.5em;
+}
+
+.App-section {
+  background-color: #fff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(10px + 3vmin);
+  color: rgb(104, 104, 104);
+}
+
+.App-carousel {
+  max-width: 1000px;
+}
+
+.App-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
 }
 
 .App-link {
-  color: #61dafb;
+  text-decoration: none;
+  color: rgb(104, 104, 104);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#App-galery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.App-galery-img {
+  width: 300px;
+  height: 300px;
+  padding: 0.1em;
+  object-fit: cover;
+}
+
+.App-comment {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: larger;
+}
+
+#App-comments, #App-contacts {
+  font-size: calc(10px + 3vmin);
+  margin-top: 1em;
+  padding-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border-top: 1px solid lightgray;
+  font-weight: 200;
+}
+
+.App-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.App-filter-star {
+  margin-top: -0.05em;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+}
+
+.App-filter-text {
+  margin-top: -0.05em;
+  margin-right: 1em;
+}
+
+.App-input {
+  margin-right: 1em;
+  width: 50%;
+  font-size: medium;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.App-button {
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(48, 103, 223);
+  border: 0;
+  border-radius: 1em;
+  font-size: large;
+  padding: 0.15em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.App-comment-stars {
+  margin-top: -0.5em;
+  font-size: xx-large;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: rgb(238, 238, 0);
+}
+
+.App-comment-text {
+  font-size: smaller;
+  text-align: left;
+  margin-top: -1em;
+}
+
+.App-pagination {
+  padding-top: 1.5em;
+  display: flex;
+  flex-direction: row;
+}
+
+.App-pagination-item {
+  padding-right: 0.5em;
+  color:cornflowerblue;
+  cursor: pointer;
+}
+
+.App-contacts {
+  font-size: medium;
+}
+
+.App-contacts-icon {
+  width: 1em;
+  padding: 0.5em;
+}
+
+.App-map {
+  width: 50%;
+  height: 350px;
 }
