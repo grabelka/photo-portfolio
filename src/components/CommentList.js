@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import Comment from './Comment';
 
+let data = require('../info.json').comments;
+let filterData = data;
+const pageSize = 3;
+
 function CommentList() {
-    let data = require('../info.json').comments;
-    let filterData = data;
-    const pageSize = 3;
     const [stars, setStars] = useState([false, false, false, false, false]);
     const [commments, setComments] = useState(data.slice(0, pageSize));
     const [findText, setFindText] = useState('');
@@ -15,7 +16,7 @@ function CommentList() {
     }
 
     function filter(position) {
-        let temp = stars
+        let temp = stars;
         temp[position] = !temp[position];
         setStars(temp);
         filterData = [];
@@ -31,7 +32,7 @@ function CommentList() {
     }
 
     function pagination(page) {
-        setComments(data.slice((page - 1) * pageSize, page * pageSize));
+        setComments(filterData.slice((page - 1) * pageSize, page * pageSize));
     }
     return (
         <section>
@@ -58,10 +59,10 @@ function CommentList() {
                 <Comment stars={item.stars} text={item.text} key={item.id}/>
             )}
             <div className='App-pagination'>
-                <p className='App-pagination-item' onClick={() => pagination(1)}>1</p>
-                <p className='App-pagination-item' onClick={() => pagination(2)}>2</p>
-                <p className='App-pagination-item' onClick={() => pagination(3)}>...</p>
-                <p className='App-pagination-item' onClick={() => pagination(Math.ceil(data.length / pageSize))}>Last</p>
+                <p className='App-pagination-item' onClick={() => pagination(1)}>{ (filterData.length > 3) ? 1 : '' }</p>
+                <p className='App-pagination-item' onClick={() => pagination(2)}>{ (filterData.length > 3) ? 2 : '' }</p>
+                <p className='App-pagination-item' onClick={() => pagination(Math.floor(filterData.length / pageSize))}>{ (filterData.length > 9) ? '...' : '' }</p>
+                <p className='App-pagination-item' onClick={() => pagination(Math.ceil(filterData.length / pageSize))}>{ (filterData.length > 6) ? 'Last' : '' }</p>
             </div>
         </section>
     );

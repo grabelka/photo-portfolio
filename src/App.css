@@ -1,4 +1,6 @@
 .App {
+  background: linear-gradient(135deg, rgba(190, 231, 255, 0.5), rgba(253, 224, 186, 0.5), rgba(190, 231, 255, 0.5), rgba(253, 224, 186, 0.5));
+  background-color: white;
   text-align: center;
   padding-top: 5em;
   font-weight: 200;
@@ -7,7 +9,8 @@
 
 #App-header {
   z-index: 3;
-  background-color: white;
+  background: linear-gradient(135deg, rgba(190, 231, 255, 0.5), rgba(253, 224, 186, 0.5), rgba(190, 231, 255, 0.5), rgba(253, 224, 186, 0.5));
+  background-color: rgb(190, 157, 185);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -18,8 +21,8 @@
 
 h1 {
   padding-left: 5%;
-  font-weight: 200;
-  font-family:'Times New Roman', Times, serif;
+  font-weight: 100;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .App-icon {
@@ -28,7 +31,6 @@ h1 {
 }
 
 .App-section {
-  background-color: #fff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -162,5 +164,12 @@ h1 {
 
 .App-map {
   width: 50%;
-  height: 350px;
+  height: 450px;
+}
+
+footer {
+  border-top: 0.1em solid lightgray;
+  margin: 1em;
+  padding: 0.5em;
+  margin-bottom: -1em;
 }

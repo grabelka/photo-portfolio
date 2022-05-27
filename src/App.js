@@ -5,6 +5,7 @@ import Menu from './components/Menu';
 import Galery from './components/Galery';
 import CommentList from './components/CommentList';
 import Contacts from './components/Contacts';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <h2 id='App-contacts'>Contacts</h2>
         <Contacts />
       </section>
+      <Footer />
     </div>
   );
 }
