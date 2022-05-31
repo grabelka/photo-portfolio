@@ -1,22 +1,18 @@
 .App {
-  background: linear-gradient(135deg, rgba(190, 231, 255, 0.5), rgba(253, 224, 186, 0.5), rgba(190, 231, 255, 0.5), rgba(253, 224, 186, 0.5));
+  background: linear-gradient(135deg, rgba(213, 239, 255, 0.5), rgba(255, 233, 205, 0.5), rgba(213, 239, 255, 0.5), rgba(255, 233, 205, 0.5));
   background-color: white;
   text-align: center;
-  padding-top: 5em;
   font-weight: 200;
   font-family: 'Courier New', Courier, monospace;
 }
 
 #App-header {
   z-index: 3;
-  background: linear-gradient(135deg, rgba(190, 231, 255, 0.5), rgba(253, 224, 186, 0.5), rgba(190, 231, 255, 0.5), rgba(253, 224, 186, 0.5));
-  background-color: rgb(190, 157, 185);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  position: fixed;
-  top: 0;
+  border-bottom: 1px solid lightgray;
 }
 
 h1 {
@@ -71,14 +67,27 @@ h1 {
   object-fit: cover;
 }
 
-.App-comment {
+.App-info {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   font-size: larger;
 }
 
-#App-comments, #App-contacts {
+.App-portrait {
+  float: left;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  margin-right: 1em;
+}
+
+.App-about-text {
+  padding-left: 1em;
+  text-align: left;
+}
+
+#App-comments, #App-contacts, #App-about, #App-galery, #App-book {
   font-size: calc(10px + 3vmin);
   margin-top: 1em;
   padding-top: 1em;
@@ -153,6 +162,12 @@ h1 {
   cursor: pointer;
 }
 
+.App-calendar {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+
 .App-contacts {
   font-size: medium;
 }
@@ -172,4 +187,17 @@ footer {
   margin: 1em;
   padding: 0.5em;
   margin-bottom: -1em;
+}
+
+.App-popup {
+  min-width: 300px;
+  padding: 2em;
+  text-align: center;
+  background-color: #fff;
+}
+
+.App-button-container {
+  padding-top: 2em;
+  display: flex;
+  justify-content: space-around;
 }

@@ -14,7 +14,7 @@ import img12 from "../images/carousel12.jpg";
 
 function Galery() {
     return (
-        <div id='App-galery'>
+        <div>
             <img className='App-galery-img' src={img1} alt='image1'/>
             <img className='App-galery-img' src={img2} alt='image2'/>
             <img className='App-galery-img' src={img3} alt='image3'/>

@@ -1,0 +1,28 @@
+{
+  "booked": [
+    {
+      "id": "m9KLf4e",
+      "name": "Max Tarasov",
+      "phone": "+380675487366",
+      "date": "Sat Jun 18 2022"
+    },
+    {
+      "id": "j8vhE4h",
+      "name": "Anna Korotenko",
+      "phone": "+380953966134",
+      "date": "Mon Jun 6 2022"
+    },
+    {
+      "name": "Irina Ivanova",
+      "phone": "+380445687345",
+      "date": "Fri Jun 10 2022",
+      "id": "g0fLnlf"
+    },
+    {
+      "name": "Artem Kononenko",
+      "phone": "+380675436090",
+      "date": "Sun Jun 12 2022",
+      "id": "KOAhY8h"
+    }
+  ]
+}
